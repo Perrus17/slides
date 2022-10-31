@@ -19,6 +19,110 @@
 		<div class="reveal">
 			<div class="slides">
 				<section><section data-transition="slide-in fade-out" data-background-color="rgb(241, 239, 228)">
+					<style>
+	
+/* bubble inspired by Mattia Astorino https://codepen.io/equinusocio/pen/jezBdZ*/
+
+
+
+.bubble::before
+{
+  content: '';
+  position:absolute;
+  z-index:2;
+  top: 195%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 15vw;
+  height: 15vw;
+  min-height: 200px;
+  min-width: 200px;
+  background: linear-gradient(
+    270deg,
+    #43e97b,
+    #38f9d7,
+    #e0c3fc,
+    #8ec5fc,
+    #4facfe,
+    #00f2fe,
+    #a8edea,
+    #fed6e3
+  );
+  background-size: 1600% 1600%;
+  box-shadow: inset 0px -20px 100px 0px rgba(255, 255, 255, 0.48);
+  animation: 
+    transform 20s linear infinite alternate,
+    movement 40s linear infinite alternate,
+    shade 60s linear infinite alternate;
+}
+
+.bubble::after
+{
+  content: '';
+  font-family: Gotham Book, sans-serif; 
+  font-size: 55%; 
+  font-weight: 500;
+  position:absolute;
+  z-index:2;
+  top: 170%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 15vw;
+  height: 10vw;
+  min-height: 200px;
+  min-width: 200px;
+  background: linear-gradient(
+    270deg,
+    #00f2fe,
+    #8ec5fc,
+    #38f9d7,
+    #4facfe,
+    #a8edea,
+    #43e97b,
+    #e0c3fc,
+    #fed6e3
+  );
+  background-size: 1600% 1600%;
+  box-shadow: inset 0px -20px 100px 0px rgba(255, 255, 255, 0.48);
+  animation: 
+    transform2 20s linear infinite alternate-reverse,
+    movement 40s linear infinite alternate-reverse,
+    shade 60s linear infinite alternate-reverse;
+}
+
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+}
+
+@keyframes transform2 {
+  0%{border-radius: 42% 58% 60% 40% / 32% 54% 46% 68%}
+  20%{border-radius: 59% 41% 36% 64% / 32% 64% 36% 68%}
+  40%{border-radius: 48% 52% 52% 48% / 54% 53% 47% 46%}
+  60%{border-radius: 42% 58% 51% 49% / 63% 64% 36% 37%}
+  80%{border-radius: 32% 68% 33% 67% / 63% 35% 65% 37%}
+  100%{border-radius: 34% 66% 52% 48% / 34% 53% 47% 66%}
+}
+
+@keyframes movement
+{
+  from { -webkit-transform: rotate(-1turn) translateY(-50px); transform: rotate(-1turn) translateY(-50px); }
+    to { -webkit-transform: none; transform: none; }
+}
+
+@keyframes shade
+{
+  0%, 100% { background-position: 0% 50%; }
+       50% { background-position: 100% 50%; }
+}
+					</style>
 					<a href="https://www.umu.se/en/department-of-geography/">
 					<img src="media/logotyp.png" width="230" style="position:relative;bottom:-560px"></a>
 					<h4 style="text-transform: none; font-family: Gotham Book, sans-serif; font-weight: bold;">Skills, jobs and regional coherence</h4>
@@ -72,18 +176,24 @@
 					  }
 					</style>
 		  </section></section>
-					<section data-background-color="rgb(241, 239, 228)"><a href="https://www.umu.se/en/department-of-geography/">
+		  <section><section data-background-color="rgb(241, 239, 228)"><a href="https://www.umu.se/en/department-of-geography/">
 						<img src="media/logotyp.png" width="230" style="position:relative;bottom:-560px"></a>
 						<h4 class="special-header" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 75%;">Background</h4>
-						<h4  style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 50%; font-weight: 500">
+						<h4 style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 50%; font-weight: 500">
 							reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-						</h4></section>
+						</h4>
+					</section><section data-background-color="rgb(241, 239, 228)"><div class="container gradient-purple-blue">
+						<div class="under-container bubble" style="height:4vh;">
+						</div></div>
+						<h4 class="special-header" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size:75%;position:absolute;bottom:-560px">Background</h4>
+						<h4 style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 50%;font-weight: 500;"><br><br><br><br><br><br>In recent years, researchers have developed a number of strategies, including a variety of relatedness measures, to approach these questions (Hidalgo et al., 2018)</h4>
+						</section></section>
 						<section data-background-color="rgb(241, 239, 228)"><a href="https://www.umu.se/en/department-of-geography/">
 							<img src="media/logotyp.png" width="230" style="position:relative;bottom:-560px"></a>
 							<h4 class="special-header" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 75%;">Aim and research questions</h4>
 							<h4  style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 50%; font-weight: 500;">
 								reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-							</h4></section>	
+							</h4></section>
 						<section data-background-color="rgb(241, 239, 228)"><a href="https://www.umu.se/en/department-of-geography/">
 							<img src="media/logotyp.png" width="230" style="position:relative;bottom:-560px"></a>
 							<h4 class="special-header" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 75%;">Theory: frictions affecting job mobility and its results</h4>
@@ -106,6 +216,7 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/simplemenu/simplemenu.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -114,7 +225,7 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, Simplemenu ]
 			});
 		</script>
 	</body>
