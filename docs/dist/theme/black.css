@@ -3,39 +3,43 @@
  *
  * By Hakim El Hattab, http://hakim.se
  */
-@import url(./fonts/source-sans-pro/source-sans-pro.css);
+
+
+@import url('https://fonts.cdnfonts.com/css/gotham');
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222;
 }
+
 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: #191919;
-  --r-main-font: Source Sans Pro, Helvetica, sans-serif;
-  --r-main-font-size: 42px;
+  --r-background-color: rgb(241, 239, 228);
+  --r-main-font: 'Gotham Book', sans-serif;
+  --r-main-font-size: 23pt;
   --r-main-color: #fff;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Source Sans Pro, Helvetica, sans-serif;
-  --r-heading-color: #fff;
+  --r-heading-font: 'Gotham Book', sans-serif;
+  --r-heading-color: rgb(0, 0, 0);
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
-  --r-heading-text-transform: uppercase;
+  --r-heading-text-transform: none;
   --r-heading-text-shadow: none;
   --r-heading-font-weight: 600;
   --r-heading1-text-shadow: none;
-  --r-heading1-size: 2.5em;
-  --r-heading2-size: 1.6em;
-  --r-heading3-size: 1.3em;
-  --r-heading4-size: 1em;
+  --r-heading1-text-shadow: none;
+  --r-heading1-size: 29pt;
+  --r-heading2-size: 26pt;
+  --r-heading3-size: 23pt;
+  --r-heading4-size: 23pt;
   --r-code-font: monospace;
   --r-link-color: #42affa;
   --r-link-color-dark: #068de9;
   --r-link-color-hover: #8dcffc;
   --r-selection-background-color: #bee4fd;
-  --r-selection-color: #fff;
+  --r-selection-color: rgb(29, 29, 29);
 }
 
 .reveal-viewport {
@@ -378,3 +382,4 @@ section.has-light-background, section.has-light-background h1, section.has-light
     background-color: var(--r-background-color);
   }
 }
+

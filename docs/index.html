@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
 	<body>
+		
 		<div class="reveal">
 			<div class="slides">
 				<section><section data-transition="slide-in fade-out" data-background-color="rgb(241, 239, 228)">
@@ -30,7 +31,7 @@
   content: '';
   position:absolute;
   z-index:2;
-  top: 1%;
+  top: 2%;
   left: 70%;
   transform: translate(-50%, -50%);
   display: block;
@@ -65,7 +66,7 @@
   font-weight: 500;
   position:absolute;
   z-index:2;
-  top: 180px;
+  top: 10px;
   left: 90%;
   transform: translate(-50%, -50%);
   display: block;
@@ -122,23 +123,49 @@
   0%, 100% { background-position: 0% 50%; }
        50% { background-position: 100% 50%; }
 }
+nav{
+display:block;
+width:100%;
+height:25px;
+
+position:fixed;
+bottom:19%;
+left:33%;
+
+padding-top:12px;
+padding-left:20px;
+
+z-index: 9999!important;    
+}
+.articles{
+position: absolute;
+top: 0;
+left: 0;
+}
 					</style>
-					<a href="https://www.umu.se/en/department-of-geography/">
-					<img src="media/logotyp.png" width="230" style="position:relative;bottom:-560px"></a>
-					<h4 style="text-transform: none; font-family: Gotham Book, sans-serif; font-weight: bold;">Skills, jobs and regional coherence</h4>
-					<h4 style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 60%;">Measuring skill relatedness and specialization using<br> information from two million job postings
-						</h4>
-						<h4 style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 55%; font-weight: 500;">by Martin Henning, Petrus Garefelt,<br>Hanna Martin and Zoltán Elekes</h4><div class="icons">
-							<div class="icon-container google6"><h4 style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 35%; font-weight: 500;">Press to navigate up/down or left/right</h4></div></div></section>
+				
+					<h1 style="font-family: 'Gotham Black', sans-serif;">Skills, jobs and regional coherence</h1>
+					<h2>Measuring skill relatedness and specialization using information from two million job postings</h2>
+					<h3>by Martin Henning, Petrus Garefelt,<br>Hanna Martin and Zoltán Elekes</h3>
+					
+						<nav>  
+							<div class="articles">
+								<a href="https://www.umu.se/en/department-of-geography/">
+									<img src="media/logotyp.png" width="350"></a>
+							</div>
+							</nav> 
+								
+		
+					</section>
 					<section data-transition="fade-in slide-out" data-background-iframe="https://perrus17.github.io/relatedness-space/"
 					data-background-interactive>							<div id="wrapper">
 					  <div id="3d-graph"></div>
 					  <div id="header">
+						
+						<h2>This research was funded by FORTE through the</h2>
 						<h1>Swedish Labour Mobility Lab</h1>
-						<h2>The overall aim of the Swedish Labour Mobility Lab is to combine unique contemporary datasets<br> and historical insights to map the labour mobility structures into expanding jobs in Sweden,<br> and increase the understanding of the ways in which skills, gender norms and geography<br> affect who enters expanding jobs, in which ways, and under which working conditions</h2>
-					  </div>
-					</div>
-				  
+
+			
 					<style>
 					  @import url('http://fonts.cdnfonts.com/css/gotham-book'); 
 					  #wrapper {
@@ -148,15 +175,16 @@
 				  
 					  #wrapper h1 {
 						font-family: 'Gotham Black', sans-serif;
-						font-size: 1.8ex;
+						font-size: 29pt;
 						line-height: 0.8;
 						text-transform: capitalize;
-						color: rgb(115,167144);
+						color: rgb(255, 255, 255);
 					  }
 	  
 					  #wrapper h2 {
 						font-family: 'Gotham Light', sans-serif;
-						font-size: 0.9ex;
+						font-size: 26pt;
+						font-weight: 600;
 						line-height: 1.5;
 						text-transform: none;
 						color: rgb(255, 255, 255);
@@ -177,22 +205,38 @@
 					  }
 					</style>
 		  </section></section>
-		  <section><section data-background-color="rgb(241, 239, 228)"><a href="https://www.umu.se/en/department-of-geography/">
-						<img src="media/logotyp.png" width="230" style="position:relative;bottom:-560px"></a>
-						<h4 class="special-header" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 75%;">Background and aim</h4>
-						<h4 style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 50%; font-weight: 500;text-align: left;">
-							In recent years, researchers have developed a number of strategies, including a variety of relatedness measures, to approach new questions around regional economic coherence and regional path dependency (Hidalgo et al., 2018).
-						</h4>
-					</section><section data-background-color="rgb(241, 239, 228)"><a href="https://www.umu.se/en/department-of-geography/">
-						<img src="media/logotyp.png" width="230" style="position:relative;bottom:-560px"></a><div class="container gradient-purple-blue">
-						<div class="under-container bubble" style="height:1vh">
-						<h4 class="special-header" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 48%;font-weight: 500;text-align: left">Various relatedness measures are presented here in a bulleted list. And then I say something about why they are good and what is problematic about them. <span class=" fragment fade-in"><br><br><br>
-						• R1</span><span class="fragment fade-in"><br><br>• R2 </span><span class="fragment fade-in"><br><br>• R3</span></h4></div></div></section>
+		  <section><section data-background-color="rgb(241, 239, 228)">
+			<h1 style="font-family: 'Gotham Black', sans-serif;text-align: left;">Background and aim</h1>
+			<h3 style="text-align: left;">
+				In recent years, researchers have developed a number of strategies, including a variety of relatedness measures, to approach new questions around regional economic coherence and regional path dependency (Hidalgo et al., 2018).
+			</h3>
+			<nav>  
+				<div class="articles">
+					<a href="https://www.umu.se/en/department-of-geography/">
+						<img src="media/logotyp.png" width="350"></a>
+				</div>
+				</nav> 
+					</section><section data-background-color="rgb(241, 239, 228)"><h1 class="fragment fade-in-then-out" style="font-family: 'Gotham Black', sans-serif; text-align: left;margin-right: 3%;">Lots of relatedness measurements</h1>
+						<h2 style="text-align: left;margin-right: 10%;margin-left:5%;" class="fragment fade-in"><span class="fragment fade-in-then-semi-out">
+						• Entropy-based (Frenken et al., 2007; Boschma et al., 2008; Wixe & Andersson 2017)</span><span class="fragment fade-in"><br><br>• Co-location (Muneepeerakul et al., 2013; Farinha et al., 2019</span><span class="fragment fade-in"><br><br>• Labour flow (Neffke & Henning, 2013)<br><br><br></span></h2><nav>  
+						<div class="articles">
+						<div class="container gradient-purple-blue">
+						<div class="under-container bubble" style="height:1vh"></div>
+						<nav>  
+							<div class="articles">
+								<a href="https://www.umu.se/en/department-of-geography/">
+									<img src="media/logotyp.png" width="350"></a>
+							</div>
+							</nav></section>
 						<section data-background-color="rgb(241, 239, 228)">
 							<div class="container">
 							<div class="shape"></div>
-						  </div><h4 class="special-header fragment fade-out" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 50%;font-weight: 500;margin-right: 385px;text-align: left"> While the ideas around skills and jobs have grown into a huge geographical literature, most regional researchers still, for practical reasons, had to rely on skills as an unobservable and aggregate entity.</h4><h4 class="special-header fragment fade-in" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 50%;font-weight: 500;text-align: left;margin-right: 385px;">In its extreme, this turns into a validity issue – when it comes to what kind of qualitative skills are actually captured in the measures, and what this tells us about spatial heterogeneity among skill categories.<span class="fragment fade-in"><br><br>The issue is not trivial or unimportant, however. </span><span class="fragment fade-in-then-semi-out"><br><br>First, there is a need to empirically validate some of the fundamental assumptions of the evolutionary labour mobility literature </span><span class="fragment fade-in-then-semi-out">Second, there is a strong need for measures that make concrete skills observable, or at least observable by close representation tokens.</span><span class="fragment fade-in-then-semi-out"> Third, regional coherence and path dependency need to be demonstrated by a precise measure</span><span class="fragment fade-in"><br><br>This paper aims to give some answers to these challenges</span></h4>
-						</h4><style>:root {
+						  </div><h1 class="special-header fragment fade-in-then-out"style="font-family: 'Gotham Black', sans-serif;margin-right: 10%;text-align: left"> Some key challenges</h1><h2 class="special-header fragment-fade-in" style="margin-right: 10%;text-align: left"><span class="fragment fade-in-then-semi-out">• Industries or occupations measured as isolated units</span><span class="fragment fade-in-then-semi-out"><br><br>• High risk of circular reasoning using flow-based indicators</span><span class="fragment fade-in-then-semi-out"><br><br>• Hard to measure skills and human capital and their role for coherence</span><span style="font-family: 'Gotham Black', sans-serif;" class="fragment fade-in"><br><br>BUT new data, new machine learning measures...</h2><nav>  
+							<div class="articles">
+								<a href="https://www.umu.se/en/department-of-geography/">
+									<img src="media/logotyp.png" width="350"></a>
+							</div>
+							</nav> <style>:root {
 							--background: #F1EFE4;
 							--primary: #88D5BF;
 							--secondary: #5D6BF8;
@@ -239,28 +283,24 @@
 	
 							</section></section>
 						<section data-background-color="rgb(241, 239, 228)">
-							<a href="https://www.umu.se/en/department-of-geography/">
-							<img src="media/logotyp.png" width="230" style="position:relative;bottom:-540px"></a>
-							<h4 class="special-header" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 75%;">Research questions</h4>
-							<style>
-								ul {
-									list-style-type: circle;
-									list-style-position: inside;
-									font-family: Gotham Book, sans-serif;
-									margin-left: 35px;
-									font-size: 40%; 
-									font-weight: 500;
-								}
-								  </style>
-							<h4 class="fragment fade-in" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 50%; font-weight: 500; text-align: left;margin-right: 300px;">
-								Which activities are related to each other in the economy, and does this relatedness matter for <span class="fragment fade-in"> (1) how people switch between jobs, </span><span class="fragment fade-in"> (2) how people are compensated for their strategies when they change jobs</span><span class="fragment fade-in">, and for (3) how particular types of jobs are concentrated in space and evolve over time?</span></h4>
+							<br><h1 style="font-family: 'Gotham Black', sans-serif;text-align: left;">Research questions</h1>
+							<h2 style="text-align: left;"><span class="fragment fade-in">Which activities are related to each other in the economy, and does this relatedness matter for </span>
+								<span class="fragment fade-in-then-semi-out"> (1) how people switch between jobs, </span><span class="fragment fade-in-then-semi-out"> (2) how people are compensated for their strategies when they change jobs</span><span class="fragment fade-in-then-semi-out">, and for (3) how particular types of jobs are concentrated in space?</span></h2>
+								<nav>  
+									<div class="articles">
+										<a href="https://www.umu.se/en/department-of-geography/">
+											<img src="media/logotyp.png" width="350"></a>
+									</div>
+									</nav>
 							</section>
 				<section><section data-background-color="rgb(241, 239, 228)">
-					<h4 class="special-header" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 75%">Data and empirical strategy</h4>
-					<br><br>
-					</h4>
-					<img src="media/overview.svg" width="450"></section>
-				<section data-background-color="rgb(241, 239, 228)"><style>
+					<h1 style="font-family: 'Gotham Black', sans-serif;text-align:left;">Data and empirical strategy</h1><nav>  
+						<div class="articles">
+							<a href="https://www.umu.se/en/department-of-geography/">
+								<img src="media/logotyp.png" width="350"></a>
+						</div>
+						</nav>
+					<style>
 				.icons {
 					display: inline-block;
 					height: 100%;
@@ -333,8 +373,8 @@
 					-webkit-animation-duration: 4s;
 					animation-duration: 4s;
 					height: 175px;
-					margin-left: -80px;
-					margin-top: 350px;
+					margin-left: 200px;
+					margin-top: 20px;
 					position: absolute;
 					width: 175px;
 				  }
@@ -380,6 +420,8 @@
 				  .google6 {
 					-webkit-animation-duration: 4s;
 					animation-duration: 4s;
+					animation-delay: -2.9s;
+					-webkit-animation-delay: -2.9s;
 					height: 20px;
 					margin-left: 250px;
 					margin-top: 290px;
@@ -393,8 +435,8 @@
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
     height: 105px;
-    margin-left: 108px;
-    margin-top: -170px;
+    margin-left: -20px;
+    margin-top: 200px;
     position: absolute;
     -webkit-transition-delay: .6s;
     transition-delay: .6s;
@@ -406,8 +448,8 @@
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
     height: 150px;
-    margin-left: -357px;
-    margin-top: 38px;
+    margin-left: 15px;
+    margin-top: 150px;
     position: absolute;
     -webkit-transition-delay: .1s;
     transition-delay: .1s;
@@ -418,13 +460,13 @@
     animation-delay: -1.8s;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
-    height: 250px;
-    margin-left: -120px;
-    margin-top: 170px;
+    height: 100px;
+    margin-left: 650px;
+    margin-top: -50px;
     position: absolute;
     -webkit-transition-delay: .1s;
     transition-delay: .1s;
-    width: 250px;
+    width: 100px;
 }
 				  </style><div class="icons">
 					<div class="icon-container google"><div class="icon" style="background-image: url(media/2553209_coding_compute_document_format_paper_icon.svg);width:150px;height:150px;"><div class="icon-container digitalocean">
@@ -432,30 +474,30 @@
 							<div class="icon" style="background-image: url(media/2553192_compute_device_dimension_gyroscope_magnitude_icon.svg); width:100px;height:100px;"></div>
 						  </div></div>
 					  </div></div>
-				</div></div><h4 class="special-header fragment fade-in-out" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 50%;font-weight: 500;text-align: left; position: absolute; top: 0"> We use open data from more than two million recent Swedish job postings combined by the analytical methods provided by the Swedish public employment service<span class="fragment fade-in-then-semi-out">, to derive directly observable information about what types of skills that are demanded for jobs in the economy</span><span class="fragment fade-in-then-semi-out">, and which jobs are more similar in terms of the skills that they require.</span></h4></section>
+				</div></div>
+				<h2 class="fragment fade-in" style="text-align: left; margin-right: 33%; "> We use open data from more than two million recent Swedish job postings combined by machine learning methods<span class="fragment fade-in" ><span class="fragment fade-in-then-semi-out"><br><br>• What types of skills that are demanded for jobs in the economy</span><span class="fragment fade-in-then-semi-out"><br><br>• Which jobs are more similar in terms of the skills that they require.</span></h2><br></section>
 				<section data-background-color="rgb(241, 239, 228)"><div class="icons">
 					<div class="icon-container google2"><div class="icon" style="background-image: url(media/overview.svg);width:500px;height:500px;"></div></div></div>
-					<h4 class="special-header fragment fade-in" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 50%;text-align: left;font-weight: 500; margin-right: 350px;">
-					A schematic overview of the approach 
-					<span class="fragment fade-in-then-semi-out"><br><br>
-						First, this dataset has entered the Job Enrichment API (shadowed area in the figure).  Here, the dataset of ads first enters into a Pre-processing stage, where raw texts are prepared for analysis.</span>
-						<span class="fragment fade-in-then-semi-out"> 
-							This renders an Embedding layer which represents an efficient method to search for and retrieve words that represent skills, given the training of the model on all 6 million job postings. </span>
-							<span class="fragment fade-in-then-semi-out"><br><br>
-								Second, we select and merge three annual sets of ads, detailing over 1.7 million advertised jobs 2019-2021.</span>
-								<span class="fragment fade-in-then-semi-out"> 
-									We communicate this set to the servers of the Embedding Layer, which extract words that, given their linguistic context, are likely to be representations of skill descriptions</span></h4></section>
-				<section data-background-color="rgb(241, 239, 228)"><div class="icons"><div class="icon-container ubuntu2"><div class="icon" style="background-image: url(media/2522271_binary_digital_filter_flow_funnel_icon.png);width:150px;height:150px;"></div></div></div><h4 class="special-body fragment fade-in" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 50%;font-weight: 500;text-align: left; position: absolute; top: 0"> However, it is of course very difficult to calculate job relatedness based on these text lists, and they also vary considerable in size. <span class="fragment fade-in-then-semi-out"><br><br>We therefore feed the lists of skills into a feature vector representation model (Doc2Vec, Le and Mikolov 2014). </span><span class="fragment fade-in-then-semi-out"> We measure the degree to which jobs relate to each other by calculating the cosine similarity between the vectors produced by the learning algorithm </span> </h4></section></section>
+					<h1  style="text-transform: none; text-align: left;">
+					Our approach 
+					<h3 class="fragment fade-in" style="margin-right: 33%;text-align: left" class="fragment fade-in"><br>
+						(1) Pre-processing</span>
+						<span class="fragment fade-in" > -> 
+							Embedding layer (fastText)</span>
+							<span class="fragment fade-in"><br><br>
+								(2) Fuzzy-matching </span><span class="fragment fade-in">-> Classification (Ind/Occ combinations)</span>
+								<span class="fragment fade-in"><br><br> 
+									(3) Skill-tokens -> </span><span class="fragment fade-in"> Feature vector representation (Doc2Vec, Le and Mikolov 2014)</span></h4></section>
+				</section>
 				<section><section data-background-color="rgb(241, 239, 228)">
-					<h4 class="special-header" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 75%;position: absolute;top: -180px;">Results</h4><h4 class="special-header fragment fade-in" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 50%;text-align: left;font-weight: 500; margin-right: 350px;position: absolute;top: -180px;">
-						<br><br>
+					<h1 style="text-transform: none; font-family: 'Gotham Black', sans-serif;text-align: left">Results</h1><h3 class="fragment fade-in" style="text-align: left; margin-right: 33%;"><div class="icons"><div class="icon-container ubuntu2"><div class="icon" style="background-image: url(media/2522271_binary_digital_filter_flow_funnel_icon.png);width:150px;height:150px;"></div></div></div>
 						<span class="fragment fade-in-then-semi-out">
 							<br>(1) Previous assumptions about the foundations of labour-based relatedness measures in terms of flow directions and wage premiums make sense on average</span>
 							<span class="fragment fade-in-then-semi-out"> 
 								<br><br>(2) Related mobility is more advantageous to some labour groups, than to others</span>
 								<span class="fragment fade-in-then-semi-out"><br><br>
 									(3) <em>Regional economic portfolios</em> are on average coherent, but this coherence is negatively linked to regional wealth</span></h4></section><section data-background-color="rgb(241, 239, 228)">
-					<h4 class="special-header fragment fade-in" style="text-transform: none; font-family: Gotham Book, sans-serif;text-align: left; font-size: 50%;margin-right: 330px;">Smaller and less skill-diversified economies struggle in our time. <span class="fragment fade-in">However, given this, regions that pursuit more skill-focussed skill <em>recruitment strategies</em> prove to be more successful than other regions.</span></h4></section></section><section data-background-color="rgb(241, 239, 228)"><h4 class="special-body" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 125%;font-weight: 500; margin-left: 400px;">Thank you!</h4><h4 class="special-body" style="text-transform: uppercase; font-family: Gotham Book, sans-serif; font-size: 40%;font-weight: 500; margin-left: 30px;"><br><br><br><br><br><br><br><br><br><br>Petrus</h4><h4 class="special-body" style="text-transform: uppercase; font-family: Gotham Book, sans-serif; font-size: 40%;font-weight: 500; margin-left: 30px;"><br><br><br><br><br><br><br><br><br><br><br><br>Garefelt</h4><h4 class="special-body" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 30%;font-weight: 500; margin-left: 30px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Dept. of Geography,</h4><h4 class="special-body" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 30%;font-weight: 500; margin-left: 30px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Umeå University</h4><h4 class="special-body" style="text-transform: none; font-family: Gotham Book, sans-serif; font-size: 30%;font-weight: 500; margin-left: 30px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Mail: petrus.garefelt@umu.se</h4><style> 
+					<h4 class="special-header fragment fade-in" style="text-transform: none; font-family: Gotham Book, sans-serif;text-align: left; font-size: 50%;margin-right: 330px;">Smaller and less skill-diversified economies struggle in our time. <span class="fragment fade-in">However, given this, regions that pursuit more skill-focussed skill <em>recruitment strategies</em> prove to be more successful than other regions.</span></h3></section></section><section data-background-color="rgb(241, 239, 228)"><h1 class="special-body" style="margin-left: 400px;">Thank you!</h1><h3 class="special-body" style="text-transform: uppercase; font-family: 'Gotham Book', sans-serif; font-size: 60%; margin-left: 0px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Petrus</h3><h3 class="special-body" style="text-transform: uppercase; font-family: 'Gotham Book', sans-serif; font-size: 60%; margin-left: 0px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Garefelt</h3><h3 class="special-body" style="text-transform: none; font-family: 'Gotham Book', sans-serif; font-size: 50%;font-weight: 500; margin-left: 0px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Dept. of Geography, Umeå University</h3><h3 class="special-body" style="text-transform: none; font-family: 'Gotham Book', sans-serif; font-size: 50%;font-weight: 500; margin-left: 0px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Mail: petrus.garefelt@umu.se</h3><style> 
     
 						.profile .picture-resume {
 						  width: 220px;
