@@ -19,12 +19,10 @@
 		
 		<div class="reveal">
 			<div class="slides">
-				<section><section data-transition="slide-in fade-out" data-background-color="rgb(241, 239, 228)">
+				<section data-transition="slide-in fade-out" data-background-color="rgb(241, 239, 228)">
 					<style>
 	
 /* bubble inspired by Mattia Astorino https://codepen.io/equinusocio/pen/jezBdZ*/
-
-
 
 .bubble::before
 {
@@ -148,14 +146,18 @@ left: 0;
 					<h2>Measuring skill relatedness and specialization using information from two million job postings</h2>
 					<h3>by Martin Henning, Petrus Garefelt,<br>Hanna Martin and Zoltán Elekes</h3>
 					
+					<nav>  
+						<div class="articles">
+						<div class="container gradient-purple-blue">
+						<div class="under-container bubble" style="height:1vh"></div>
 						<nav>  
 							<div class="articles">
 								<a href="https://www.umu.se/en/department-of-geography/">
 									<img src="media/logotyp.png" width="350"></a>
 							</div>
-							</nav> 
+							</nav>
 								
-		
+	
 					</section>
 					<section data-transition="fade-in slide-out" data-background-iframe="https://perrus17.github.io/relatedness-space/"
 					data-background-interactive>							<div id="wrapper">
@@ -204,39 +206,31 @@ left: 0;
 						-webkit-backdrop-filter: blur(3px);
 					  }
 					</style>
-		  </section></section>
+		</section>
 		  <section><section data-background-color="rgb(241, 239, 228)">
-			<h1 style="font-family: 'Gotham Black', sans-serif;text-align: left;">Background and aim</h1>
-			<h3 style="text-align: left;">
-				In recent years, researchers have developed a number of strategies, including a variety of relatedness measures, to approach new questions around regional economic coherence and regional path dependency (Hidalgo et al., 2018).
-			</h3>
-			<nav>  
-				<div class="articles">
-					<a href="https://www.umu.se/en/department-of-geography/">
-						<img src="media/logotyp.png" width="350"></a>
-				</div>
-				</nav> 
-					</section><section data-background-color="rgb(241, 239, 228)"><h1 class="fragment fade-in-then-out" style="font-family: 'Gotham Black', sans-serif; text-align: left;margin-right: 3%;">Lots of relatedness measurements</h1>
-						<h2 style="text-align: left;margin-right: 10%;margin-left:5%;" class="fragment fade-in"><span class="fragment fade-in-then-semi-out">
-						• Entropy-based (Frenken et al., 2007; Boschma et al., 2008; Wixe & Andersson 2017)</span><span class="fragment fade-in"><br><br>• Co-location (Muneepeerakul et al., 2013; Farinha et al., 2019</span><span class="fragment fade-in"><br><br>• Labour flow (Neffke & Henning, 2013)<br><br><br></span></h2><nav>  
-						<div class="articles">
-						<div class="container gradient-purple-blue">
-						<div class="under-container bubble" style="height:1vh"></div>
-						<nav>  
-							<div class="articles">
-								<a href="https://www.umu.se/en/department-of-geography/">
-									<img src="media/logotyp.png" width="350"></a>
-							</div>
-							</nav></section>
-						<section data-background-color="rgb(241, 239, 228)">
-							<div class="container">
-							<div class="shape"></div>
-						  </div><h1 class="special-header fragment fade-in-then-out"style="font-family: 'Gotham Black', sans-serif;margin-right: 10%;text-align: left"> Some key challenges</h1><h2 class="special-header fragment-fade-in" style="margin-right: 10%;text-align: left"><span class="fragment fade-in-then-semi-out">• Industries or occupations measured as isolated units</span><span class="fragment fade-in-then-semi-out"><br><br>• High risk of circular reasoning using flow-based indicators</span><span class="fragment fade-in-then-semi-out"><br><br>• Hard to measure skills and human capital and their role for coherence</span><span style="font-family: 'Gotham Black', sans-serif;" class="fragment fade-in"><br><br>BUT new data, new machine learning measures...</h2><nav>  
-							<div class="articles">
-								<a href="https://www.umu.se/en/department-of-geography/">
-									<img src="media/logotyp.png" width="350"></a>
-							</div>
-							</nav> <style>:root {
+			<h1 style="font-family: 'Gotham Black', sans-serif;text-align: left;">Background of our research</h1>
+			<h2 style="text-align: left;">
+				<ul style="font-size:23pt">
+				<li>From the literature, we have a strong hunch that the local composition of skills matter a lot to regional development</li>
+			
+				<br><ol type="1" style="font-size:20pt">
+					<li>Regions organizational platform for collective knowledge: there is more to local skills than the presence of isolated individuals (complementaries and spillovers)</li>
+					<li>Regions as coherent labour markets (attraction of labour and employers, and smoother job transitions)</li>
+				  </ol>
+				  <br>
+				  <li>The value of specific strong 'domains of skills' within larger local diversity seems to be especially important (clusters within larger cities)</li>
+				  <li>But is very difficult to map local economies’ skill ecology in a way that makes empirical and practical sense</li>
+				  <br><ol type="1" style="font-size:20pt">
+					<li>Because skills are difficult to measure anyhow</li>
+					<li>Because the standard statistical categories portrays ’domains of skills’ as isolated units (educational levels, industries, occupations)</li>
+				  </ol>
+				  <br>
+				  <li>Game-changer: big data access and increasingly user-friendly methods </li>
+				</ul>
+				
+			</h2>
+		
+					</section><style>:root {
 							--background: #F1EFE4;
 							--primary: #88D5BF;
 							--secondary: #5D6BF8;
@@ -279,23 +273,86 @@ left: 0;
 								border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
 								background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
 							} 
-						}</style>
+						}
+						#wrapper_j{
+    width:100%;
+    height:100%;
+
+}
+
+#sideBar_j{
+    width:30%;
+    height:100%;
+
+    display:block;
+    float:left;
+}
+#mainContent_j{
+    width:70%;
+    height:100%;
+    display:block;
+    float:left;
+}
+nav2{
+							display:block;
+							width:100%;
+							height:25px;
+							
+							position:fixed;
+							bottom:65%;
+							left:0%;
+							
+							padding-top:12px;
+							padding-left:20px;
+							
+							z-index: 9999!important;    
+							}
+							.articles2{
+							position: absolute;
+							top: 0;
+							left: 0;
+							}</style>
 	
-							</section></section>
-						<section data-background-color="rgb(241, 239, 228)">
-							<br><h1 style="font-family: 'Gotham Black', sans-serif;text-align: left;">Research questions</h1>
-							<h2 style="text-align: left;"><span class="fragment fade-in">Which activities are related to each other in the economy, and does this relatedness matter for </span>
-								<span class="fragment fade-in-then-semi-out"> (1) how people switch between jobs, </span><span class="fragment fade-in-then-semi-out"> (2) how people are compensated for their strategies when they change jobs</span><span class="fragment fade-in-then-semi-out">, and for (3) how particular types of jobs are concentrated in space?</span></h2>
-								<nav>  
-									<div class="articles">
-										<a href="https://www.umu.se/en/department-of-geography/">
-											<img src="media/logotyp.png" width="350"></a>
-									</div>
-									</nav>
 							</section>
-				<section><section data-background-color="rgb(241, 239, 228)">
-					<h1 style="font-family: 'Gotham Black', sans-serif;text-align:left;">Data and empirical strategy</h1>
+						<section data-background-color="rgb(241, 239, 228)">
+							
+							<h1 style="font-family: 'Gotham Black', sans-serif;text-align: left;">Idea with this paper</h1><br>
+							<h2 style="text-align: left;"><ul style="font-size:20pt">
+								<ol type="1" style="font-size:23pt">
+									<li>If we are able to map the present skill domains of a local economy, are local economies skills coherent, or do they rather consist of disparate and maybe complementary skills?</li>
+									<li>As regional labour markets develop across time, do they develop in coherent ways (pushing economies towards specific domains of knowledge), and how is that linked to the coherence of the existing local economy?</li>
+									<li>How does this ’labour market push’ strategy matter for regional wealth?</li>
+								  </ol>
+								  <br>
+									<li>To assess this, we need</li><br>
+									<ol type="1" style="font-size:23pt">
+										<li>a reasonably good way to pinpoint skills in jobs</li>
+										<li>a measure that assesses how related jobs are to each other (’domains of skills’)</li>
+										<li>data on local portfolios of jobs (indication of locally present skills)</li>
+									  </ol>
+								</ul>
+								
+							</h2>
+							</section>
+				<section data-background-color="rgb(241, 239, 228)">
+					<h1 style="font-family: 'Gotham Black', sans-serif;text-align:left;">Skills jobs and skill-relatedness between jobs</h1><br><div id="wrapper_j">
+						<div id="sideBar_j">
+						<h2 style="text-align: left; margin-right: -50%;"><ul style="font-size:21pt">
+						<li>Text in Swedish job ads 2019-2021 from the Swedish Public Employment Service</li>
+						<li>Identification of ”skill tokens” in jobs (occupation*industries)</li>
+						<li>Machine learning to assess relatedness (skill similarity between jobs)</li>
+						<li>Combined with local economic data from Statistics Sweden</li>
+					</ul></h2>
+			</div> 
+						<div id="mainContent_j">  
+								<img src="media/show.png" style="margin-right: -10%; margin-top: -0%" width="500"><div class="icons">
+									<div class="icon-container google2"><div class="icon" style="background-image: url(media/overview.svg);width:500px;height:500px;"></div></div></div>
+					</div>
+			
+					 
+					<br>
 					<style>
+						
 				.icons {
 					display: inline-block;
 					height: 100%;
@@ -365,20 +422,22 @@ left: 0;
 				  
 				  
 				  .google {
-					-webkit-animation-duration: 4s;
-					animation-duration: 4s;
-					height: 175px;
-					margin-left: 200px;
-					margin-top: 20px;
+					-webkit-animation-duration: 6s;
+					animation-duration: 6s;
+					height: 155px;
+					margin-left: 10px;
+					margin-top: 400px;
 					position: absolute;
-					width: 175px;
+					width: 155px;
 				  }
 				  .google2 {
 					-webkit-animation-duration: 4s;
 					animation-duration: 4s;
+					animation-delay: -2.1s;
+					-webkit-animation-delay: -2.1s;
 					height: 275px;
-					margin-left: 150px;
-					margin-top: 360px;
+					margin-left: -300px;
+					margin-top: 300px;
 					position: absolute;
 					width: 375px;
 				  }
@@ -430,8 +489,8 @@ left: 0;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
     height: 105px;
-    margin-left: -20px;
-    margin-top: 200px;
+    margin-left: 850px;
+    margin-top: -500px;
     position: absolute;
     -webkit-transition-delay: .6s;
     transition-delay: .6s;
@@ -442,13 +501,13 @@ left: 0;
     animation-delay: -1.8s;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
-    height: 150px;
-    margin-left: 15px;
-    margin-top: 150px;
+    height: 135px;
+    margin-left: -285px;
+    margin-top: 200px;
     position: absolute;
     -webkit-transition-delay: .1s;
     transition-delay: .1s;
-    width: 150px;
+    width: 135px;
 }
 .ubuntu2 {
   -webkit-animation-delay: -1.8s;
@@ -463,28 +522,56 @@ left: 0;
     transition-delay: .1s;
     width: 100px;
 }
-				  </style><div class="icons">
-					<div class="icon-container google"><div class="icon" style="background-image: url(media/2553209_coding_compute_document_format_paper_icon.svg);width:150px;height:150px;"><div class="icon-container digitalocean">
-						<div class="icon" style="background-image: url(media/2553228_binary_box_coding_cube_development_icon.svg); width:100px;height:100px;"><div class="icon-container ubuntu">
-							<div class="icon" style="background-image: url(media/2553192_compute_device_dimension_gyroscope_magnitude_icon.svg); width:100px;height:100px;"></div>
-						  </div></div>
-					  </div></div>
-				</div></div>
-				<h2 class="fragment fade-in" style="text-align: left; margin-right: 33%; "> We use open data from more than two million recent Swedish job postings combined by machine learning methods<span class="fragment fade-in" ><span class="fragment fade-in-then-semi-out"><br><br>• What types of skills that are demanded for jobs in the economy</span><span class="fragment fade-in-then-semi-out"><br><br>• Which jobs are more similar in terms of the skills that they require.</span></h2><br></section>
-				<section data-background-color="rgb(241, 239, 228)"><div class="icons">
-					<div class="icon-container google2"><div class="icon" style="background-image: url(media/overview.svg);width:500px;height:500px;"></div></div></div>
-					<h1  style="text-transform: none; text-align: left;">
-					Our approach 
-					<h3 class="fragment fade-in" style="margin-right: 33%;text-align: left" class="fragment fade-in"><br>
-						(1) Pre-processing</span>
-						<span class="fragment fade-in" > -> 
-							Embedding layer (fastText)</span>
-							<span class="fragment fade-in"><br><br>
-								(2) Fuzzy-matching </span><span class="fragment fade-in">-> Classification (Ind/Occ combinations)</span>
-								<span class="fragment fade-in"><br><br> 
-									(3) Skill-tokens -> </span><span class="fragment fade-in"> Feature vector representation (Doc2Vec, Le and Mikolov 2014)</span></h4></section>
-				</section>
-				<section><section data-background-color="rgb(241, 239, 228)"><style>
+				  </style></section>
+				<section data-transition="fade-in slide-out" data-background-iframe="https://perrus17.github.io/relatedness-space/"
+				data-background-interactive>							<div id="wrapper">
+				  <div id="3d-graph"></div>
+				  <div id="header">
+					
+					<h2>A network layout of the skill-relatedness measure</h2>
+
+		
+				<style>
+				  @import url('http://fonts.cdnfonts.com/css/gotham-book'); 
+				  #wrapper {
+					width: 100vw;
+					height: 100vh;
+				  }
+			  
+				  #wrapper h1 {
+					font-family: 'Gotham Black', sans-serif;
+					font-size: 29pt;
+					line-height: 0.8;
+					text-transform: capitalize;
+					color: rgb(255, 255, 255);
+				  }
+  
+				  #wrapper h2 {
+					font-family: 'Gotham Light', sans-serif;
+					font-size: 26pt;
+					font-weight: 600;
+					line-height: 1.5;
+					text-transform: none;
+					color: rgb(255, 255, 255);
+				  }
+			  
+				  #header {
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: fit-content;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					backdrop-filter: blur(3px);
+					-webkit-backdrop-filter: blur(3px);
+				  }
+				</style>
+	</section>
+				
+				<section data-background-color="rgb(241, 239, 228)"><style>
 				nav2{
 					display:block;
 					width:100%;
@@ -492,7 +579,7 @@ left: 0;
 					
 					position:fixed;
 					bottom:65%;
-					left:0%;
+					left:5%;
 					
 					padding-top:12px;
 					padding-left:20px;
@@ -503,26 +590,200 @@ left: 0;
 					position: absolute;
 					top: 0;
 					left: 0;
-					}</style>
-					<h1 style="text-transform: none; font-family: 'Gotham Black', sans-serif;text-align: left">Result: flows</h1><h3 class="fragment fade-in" style="text-align: left; margin-right: 33%;">
-						<span class="fragment fade-in-then-out">Previous assumptions about the foundations of labour-based relatedness measures in terms of flow directions and wage premiums make sense on average<br><br><br><br><br><br><br></span><span class="fragment fade-in"><nav2>  
-							<div class="articles2">
-									<img src="media/flow-numbers.jpg" width="600">
-							</div>
-							</nav2>
-						</h3></span></section><section data-background-color="rgb(241, 239, 228)"><h1 style="text-transform: none; font-family: 'Gotham Black', sans-serif;text-align: left">Result: wages </h1><h3 class="fragment fade-in" style="text-align: left; margin-right: 33%;">
-							<span class="fragment fade-in-then-out"> 
-								Related mobility is more advantageous to some labour groups, than to others<br><br><br><br><br><br><br><br><br><br></span><span class="fragment fade-in"><nav2>  
-									<div class="articles2">
-											<img src="" width="600">
-									</div>
-									</nav2><h3></section><section data-background-color="rgb(241, 239, 228)"><h1 style="text-transform: none; font-family: 'Gotham Black', sans-serif;text-align: left">Result: recruitment strategy (more focused is better, given regional structure) </h1><h3 class="fragment fade-in" style="text-align: left; margin-right: 33%;"><span class="fragment fade-in-then-out">
-								
-									<em>Regional economic portfolios</em> are on average coherent, but this coherence is negatively linked to regional wealth<br><br><br><br><br><br><br><br><br><br></span><span class="fragment fade-in"><nav2><div class="articles2">
-										<img src="media/coh.jpg" width="600">
+					}
+					nav3{
+					display:block;
+					width:150%;
+					height:105px;
+					
+					position:fixed;
+					bottom:55%;
+					left:55%;
+					
+					padding-top:12px;
+					padding-left:20px;
+					
+					z-index: 9999!important;    
+					}
+					.articles3{
+					position: absolute;
+					top: 0;
+					left: 0;
+					}
+					
+
+/* Create two equal columns that floats next to each other */
+#wrapper_k{
+    width:100%;
+    height:100%;
+
+}
+
+#sideBar_k{
+    width:50%;
+    height:100%;
+
+    display:block;
+    float:left;
+}
+#mainContent_k{
+    width:50%;
+    height:100%;
+    display:block;
+    float:left;
+}
+
+
+					</style>
+				
+				<h1 style="text-transform: none; font-family: 'Gotham Black', sans-serif; text-align: left">Validity</h1>
+					<div id="wrapper_k">
+						<div id="sideBar_k"><h3 style="text-align: left;"><ul style="font-size:23pt">
+							<li>More related job combinations are more likely to have higher job switch frequencies</li>
+						</ul>
+							<nav2>
+								<div class="articles2">
+									<img src="media/flow-numbers.jpg" width="500">
+									<h4 style="font-size:18pt">Job-combination relatedness</h4>
+									<h4 style="transform:rotate(-90deg);position: absolute;top: 41%;left: -37%;font-size:18pt">Relative job switch freq</h4>
 								</div>
-								</nav2></h4></section><section><section data-background-color="rgb(241, 239, 228)"><h1 style="text-transform: none; font-family: 'Gotham Black', sans-serif;text-align: left">Conclusions</h1><br>
-					<h2 class="fragment fade-in" style="text-transform: none;text-align: left;margin-right: 33%;"><span class="fragment fade-in"> (1) a new job relatedness measure </span> <span class="fragment fade-in"><br><br> (2) coherence (sharing)</span><span class="fragment fade-in"><br><br> (3) values of clusters within cities (establishing a credible labour market for certain specialists</span><span class="fragment fade-in"><br><br>(4) wage competition (which benefits workers </span></h2></section></section></section><section data-background-color="rgb(241, 239, 228)"><h1 class="special-body" style="margin-left: 400px;">Thank you!</h1><h3 class="special-body" style="text-transform: uppercase; font-family: 'Gotham Book', sans-serif; font-size: 60%; margin-left: 0px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Petrus</h3><h3 class="special-body" style="text-transform: uppercase; font-family: 'Gotham Book', sans-serif; font-size: 60%; margin-left: 0px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Garefelt</h3><h3 class="special-body" style="text-transform: none; font-family: 'Gotham Book', sans-serif; font-size: 50%;font-weight: 500; margin-left: 0px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Dept. of Geography, Umeå University</h3><h3 class="special-body" style="text-transform: none; font-family: 'Gotham Book', sans-serif; font-size: 50%;font-weight: 500; margin-left: 0px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Mail: petrus.garefelt@umu.se</h3><style> 
+								</nav2>
+							</h3></div>
+						<div id="mainContent_k"><h3 style="text-align: left;"><ul style="font-size:23pt">
+							<li>People that move between related jobs earn a higher wage premium</li>
+						</ul>
+						<nav3><div class="articles3">
+							<img src="media/try.png" width="550"><h4 style="font-size:18pt;margin-right: 28%;">Job-combination relatedness’ impact on wage premiums 
+							</h4></div></nav3></div>
+					</div>
+				</section>
+				<section><style>#wrapper_l{
+					width:100%;
+					height:100%;
+				
+				}
+				
+				#sideBar_l{
+					width:30%;
+					height:100%;
+				
+					display:block;
+					float:left;
+				}
+				#mainContent_l{
+					width:70%;
+					height:100%;
+					display:block;
+					float:left;
+				}
+				nav4{
+					display:block;
+					width:150%;
+					height:105px;
+					
+					position:fixed;
+					bottom:55%;
+					left:30%;
+					
+					padding-top:12px;
+					padding-left:20px;
+					
+					z-index: 9999!important;    
+					}
+					.articles4{
+					position: absolute;
+					top: 0;
+					left: 0;
+					}
+					nav5{
+					display:block;
+					width:150%;
+					height:105px;
+					
+					position:fixed;
+					bottom:90%;
+					left:44%;
+					
+					padding-top:12px;
+					padding-left:20px;
+					
+					z-index: 9999!important;    
+					}
+					.articles5{
+					position: absolute;
+					top: 0;
+					left: 0;
+					}</style>
+					<h1 style="text-transform: none; font-family: 'Gotham Black', sans-serif;text-align: left">Results: local portfolio skill-coherence</h1><br>
+					<div id="wrapper_l">
+						<div id="sideBar_l"><h3 style="text-align: left; font-size: 20pt;"><br><br><br><br><br><br><br>Coherence is the average
+							skill-relatedness between all jobs 
+							in a municipality
+							<br><br><br>
+							80% of local economies have a 
+higher skill-coherence than the 
+national average
+
+							
+							
+							</h3></div>
+						<div id="mainContent_l"><nav4>
+							<div class="articles4">
+								<img src="media/coh-new.png" width="800">
+								
+							</div>
+							</nav4></div>
+					</div>
+				</section>
+				<section>
+					<h1 style="text-transform: none; font-family: 'Gotham Black', sans-serif;text-align: left;margin-right: 45%;">Existing local portfolio coherence vs. local coherence in the ads (push in local ’skill domains’)</h1>
+					<div id="wrapper_l">
+						<div id="sideBar_l"><h3 style="text-align: left; font-size: 20pt;margin-right: -49%;">	<ul style="font-size:16pt">
+							<li>If we are able to map the present skill domains of a local economy, are local economies skills coherent, or do they rather consist of disparate and maybe complementary skills?</li>
+							<li>As regional labour markets develop across time, do they develop in coherent ways (pushing economies towards specific domains of knowledge), and how is that linked to the coherence of the existing local economy?</li>
+							<li>How does this ’labour market push’ strategy matter for regional wealth?</li>
+							<br><li>The ratio between portfolio coherence and ad coherence is a sign of the labour market-push coherence of local economies</li>
+						  </ul></h3>
+						  <h3 style="text-align: left; font-size: 16pt;margin-left: 10%;">	
+						  <ul>
+							<li>Matters significantly to local economic wealth the higher ad coherence, the better the<br> local wage growth</li>
+							<li>Reflects expansion of more coherent and specialized sections of local labour markets...</li>
+							<li>...or high demand for a special type of labour</li>
+							<li>Could take place within diverse cities as well</li>
+						  </ul></h3></div>
+						<div id="mainContent_l"><nav5>
+							<div class="articles5">
+								<img src="media/test.png" width="670">
+								
+							</div>
+							</nav5></div>
+					</div>
+				</section><section><h1 style="font-family: 'Gotham Black', sans-serif;text-align: left;">Conclusions</h1>
+					<h2 style="text-align: left;">
+						<ul style="font-size:23pt">
+						<li>Information embedded in geo-coded job ads is a great resource for deriving information about 
+						</li><ul style="font-size:21pt"></ul>
+					
+						<ul style="font-size:20pt">
+							<li>'skill domains' present in local economies
+							</li>
+							<li>the direction in which the local economy pushes its labour market frontier</li>
+						  </ul>
+						  <br>
+						  <li>Local economies are highly coherent in terms of present skill domains</li>
+						  <li>The smaller the local economy, the more coherent
+						</li>
+						<li>The coherence of local economies are not correlated with the coherence of published local job ads</li>
+						<li>But the more coherent the job ads, the more successful the local economy</li><br>
+						<li>Reflects coherent labour market push of larger regions (spillovers, building a credible local labour market in a specific field)
+						</li>
+						<li>Game-changer in regional skills research
+						</li>
+
+						</ul>
+						
+					</h2></section>
+					<section data-background-color="rgb(241, 239, 228)"><style> 
     
 						.profile .picture-resume {
 						  width: 220px;
@@ -589,7 +850,7 @@ left: 0;
 						<section class="profile section-padding">
 								<div class="picture-resume-wrapper">
 							<div class="picture-resume">
-							<span><img src="PEGG2.png" alt="" /></span>
+							<span><h1 class="special-body" style="margin-left: 25px;">Thank you!</h1></span>
 							<svg version="1.1" viewBox="0 0 350 350">
 					  
 					  <defs>
@@ -668,6 +929,8 @@ left: 0;
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				width: 1280,
+				height: 720,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, Simplemenu ]
